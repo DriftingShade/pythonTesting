@@ -10,3 +10,12 @@ def test_add():
 def test_divide():
     result = my_functions.divide(6, 3)
     assert result == 2
+
+
+def test_add_strings():
+    result = my_functions.add("I like", " Python")
+    assert result == "I like Python"
+
+
+def test_divide_by_zero():
+    my_functions.divide(10, 2)
